@@ -1,0 +1,9 @@
+{
+  "name": "get-result",
+  "version": "1.0.0",
+  "description": "软件测试搜题脚本",
+  "main": "index.js",
+  "repository": "git@github.com:ahhTou/exam-search-questions-script.git",
+  "author": "ahhTou",
+  "license": "MIT"
+}

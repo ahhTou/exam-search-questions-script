@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="set()">无重输出</button>
+<button onclick="clear()">清空</button>
+<script>
+
+    function set() {
+        const item = localStorage.getItem('questions')
+        const obj = JSON.parse(item)
+
+        console.log(obj)
+
+        const at = {
+            'hello': '321'
+        }
+
+        console.log(Object.keys(obj.q1))
+
+        let str = '填空题\n\n'
+        const a = obj.q1
+
+
+        console.log(str)
+
+    }
+
+    function clear() {
+        localStorage.clear()
+        localStorage.setItem('questions', null)
+    }
+
+</script>
+</body>
+</html>
